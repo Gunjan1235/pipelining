@@ -1,9 +1,10 @@
 Pipelining in computer architecture:  MIPS pipelining implementation
- 
-Pipelining is the process of accumulating instruction from the processor through a pipeline. It allows storing and executing instructions in an orderly process.
-An instruction pipeline reads instruction from the memory while previous instructions are being executed in other segments of the pipeline.
-Thus, multiple instructions can be executed simultaneously.It is an implementation technique that uses parallelism (which exists among the actions needed to execute an instruction).  
-So as to make our CPU work fast Pipelining is the key implementation technique that is in use these days.
-In our project we are going to implement pipelining in MIPS architecture so as to observe the way that data dependencies can be handled by the system.
+ Usually multiple instructions get overlapped in execution of any program and this problem can be solved by using “Pipelining”. Pipelining is an implementation technique that uses parallelism (which exists among the actions needed to execute an instruction).  
+So as to make our CPU work fast Pipelining is the key implementation technique that is in use these days.In a pipelined processor, a pipeline has two ends, the input end and the output end. Between these ends, there are multiple stages/segments such that output of one stage is connected to input of next stage and each stage performs a specific operation.And as a result using pipeline we gets following benefits:
 
+1. The cycle time of the processor is reduced.
+2. It increases the throughput of the system
+3.It makes the system reliable
+
+In our project we are going to implement pipelining in MIPS architecture so as to observe the way that data dependencies can be handled by the system.
 Group code-7033
